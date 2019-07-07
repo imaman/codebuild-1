@@ -13,7 +13,7 @@ public class MessageUtilTest {
   @Test
   public void testSalutationMessage() {
     MessageUtil messageUtil = new MessageUtil("Robert");
-    assertEquals("Hi!Robert", messageUtil.salutationMessage());
+    assertEquals("Hi! Robert", messageUtil.salutationMessage());
   }
 }
 
