@@ -7,7 +7,7 @@ public class MessageUtil {
 
   public String printMessage() {
     System.out.println(message);
-    return message;
+    return _message;
   }
 
   public String salutationMessage() {
