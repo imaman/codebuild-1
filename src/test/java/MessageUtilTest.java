@@ -19,4 +19,10 @@ public class MessageUtilTest {
     message = "Hi!" + "Robert";
     assertEquals(message,messageUtil.salutationMessage());
   }
+
+  @Test
+  public void accumulatesTheHis() {
+    assertEquals("Hi!Robert", messageUtil.salutationMessage());
+    assertEquals("Hi!Hi!Robert", messageUtil.salutationMessage());
+  }
 }
