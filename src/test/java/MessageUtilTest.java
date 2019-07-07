@@ -2,7 +2,7 @@ import org.junit.Test;
 import org.junit.Ignore;
 import static org.junit.Assert.assertEquals;
 
-public class TestMessageUtil {
+public class MessageUtilTest {
 
   String message = "Robert";    
   MessageUtil messageUtil = new MessageUtil(message);
@@ -16,7 +16,7 @@ public class TestMessageUtil {
   @Test
   public void testSalutationMessage() {
     System.out.println("Inside testSalutationMessage()");
-    message = "Hi!" + "Robert";
+    message = "Hi!" + "Robert_";
     assertEquals(message,messageUtil.salutationMessage());
   }
 }
