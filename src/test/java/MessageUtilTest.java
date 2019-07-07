@@ -2,7 +2,7 @@ import org.junit.Test;
 import org.junit.Ignore;
 import static org.junit.Assert.assertEquals;
 
-public class TestMessageUtil {
+public class MessageUtilTest {
 
   String message = "Robert";    
   MessageUtil messageUtil = new MessageUtil(message);
