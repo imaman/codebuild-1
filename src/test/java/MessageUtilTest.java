@@ -13,10 +13,10 @@ public class MessageUtilTest {
     assertEquals("Hi! Robert", messageUtil.salutationMessage());
   }
   @Test
-  public void testAccumulation() {
+  public void testNoAccumulation() {
     MessageUtil messageUtil = new MessageUtil("Robert");
     assertEquals("Hi! Robert", messageUtil.salutationMessage());
-    assertEquals("Hi! Hi! Robert", messageUtil.salutationMessage());
+    assertEquals("Hi! Robert", messageUtil.salutationMessage());
   }
 }
 
