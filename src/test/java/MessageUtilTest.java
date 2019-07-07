@@ -3,7 +3,6 @@ import org.junit.Ignore;
 import static org.junit.Assert.assertEquals;
 
 public class MessageUtilTest {
-
   String message = "Robert";    
   MessageUtil messageUtil = new MessageUtil(message);
    
@@ -12,14 +11,12 @@ public class MessageUtilTest {
     System.out.println("Inside testPrintMessage()");     
     assertEquals(message,messageUtil.printMessage());
   }
-
   @Test
   public void testSalutationMessage() {
     System.out.println("Inside testSalutationMessage()");
     message = "Hi!" + "Robert";
     assertEquals(message,messageUtil.salutationMessage());
   }
-
   @Test
   public void accumulatesTheHis() {
     assertEquals("Hi!Robert", messageUtil.salutationMessage());
