@@ -11,8 +11,8 @@ public class MessageUtil {
   }
 
   public String salutationMessage() {
-    message = "Hi! " + message;
-    System.out.println(message);
-    return message;
+    String temp = "Hi! " + message;
+    System.out.println(temp);
+    return temp;
   }
 }
